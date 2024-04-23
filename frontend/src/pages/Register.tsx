@@ -1,14 +1,14 @@
 import { useForm } from "react-hook-form";
 
-const Register = () => {
-    type RegisterFormData = {
-        firstName: string;
-        lastName: string;
-        email: string;
-        password: string;
-        confirmPassword: string;
-    };
+export type RegisterFormData = {
+    firstName: string;
+    lastName: string;
+    email: string;
+    password: string;
+    confirmPassword: string;
+};
 
+const Register = () => {
     const {
         register,
         watch,
